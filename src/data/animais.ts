@@ -81,7 +81,7 @@ export const animais: Animal[] = [
       {
         id: 'h2',
         data: '2026-02-18',
-        fase: 'observacao',
+        fase: 'internacao',
         titulo: 'Período de observação sanitária',
         descricao: 'Animal em quarentena padrão de 48h para descartar doenças transmissíveis antes do contato com outros animais do canil.',
       },
