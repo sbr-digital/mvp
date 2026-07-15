@@ -25,8 +25,8 @@ export const animais: Animal[] = [
         data: '2026-02-10',
         fase: 'recolhimento',
         titulo: 'Recolhido pela Vigilância Ambiental (Demma)',
-        descricao: 'Animal encontrado solto na via pública no Bairro Bela Vista. Conduzido ao Canil Municipal para avaliação inicial.',
-        responsavel: 'Equipe Demma',
+        descricao: 'Animal encontrado solto na via pública no Bairro Vista. Conduzido ao Canil Municipal para avaliação inicial.',
+        responsavel: 'Equipe',
       },
       {
         id: 'h2',
@@ -34,7 +34,7 @@ export const animais: Animal[] = [
         fase: 'internacao',
         titulo: 'Avaliação veterinária inicial',
         descricao: 'Exame clínico geral. Constatado ferimento superficial em pata traseira direita. Peso registrado: 18.4kg.',
-        responsavel: 'Médica Veterinária responsável',
+        responsavel: 'Veterinário responsável',
       },
       {
         id: 'h3',
@@ -42,13 +42,14 @@ export const animais: Animal[] = [
         fase: 'tratamento',
         titulo: 'Início de curativo diário',
         descricao: 'Aplicação de pomada cicatrizante e troca de curativo. Animal em recuperação, sem sinais de infecção.',
+        responsavel: 'Veterinário responsável',
       },
       {
         id: 'h4',
         data: '2026-02-15',
         fase: 'pos_recolhimento',
         titulo: 'Prazo legal para reintegração de posse',
-        descricao: 'Encerra-se o prazo de 5 dias úteis previsto no Decreto 160/2018 para que o proprietário reivindique o animal.',
+        descricao: 'Encerra-se o prazo de 5 dias úteis previsto no Decreto para que o proprietário reivindique o animal.',
       },
     ],
   },
@@ -76,7 +77,7 @@ export const animais: Animal[] = [
         data: '2026-02-17',
         fase: 'recolhimento',
         titulo: 'Recolhida no Centro da cidade',
-        descricao: 'Encontrada junto a um grupo de animais soltos próximo à praça central.',
+        descricao: 'Encontrada junto a um grupo de animais soltos próximo à praça.',
       },
       {
         id: 'h2',
@@ -110,7 +111,7 @@ export const animais: Animal[] = [
         id: 'h1',
         data: '2026-01-28',
         fase: 'recolhimento',
-        titulo: 'Recolhido pela equipe de zoonoses',
+        titulo: 'Recolhido pela equipe',
         descricao: 'Denúncia da vizinhança sobre animal solto e agressivo com transeuntes.',
       },
       {
