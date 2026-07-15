@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#e5e7eb"/>
+  <g fill="#9ca3af" font-family="Segoe UI, sans-serif" text-anchor="middle">
+    <text x="200" y="150" font-size="20" font-weight="600">Foto não disponível</text>
+    <text x="200" y="180" font-size="14">Canil Municipal</text>
+  </g>
+</svg>

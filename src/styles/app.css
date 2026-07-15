@@ -1,0 +1,117 @@
+:root {
+  --primary: #1b3a63;
+  --accent: #d9822b;
+  --bg: #f5f6f8;
+  --card-bg: #ffffff;
+  --text: #1e2430;
+  --muted: #6b7280;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); }
+
+.page { max-width: 1100px; margin: 0 auto; padding: 24px 16px 64px; }
+
+.hero { padding: 32px 0 16px; }
+.hero h1 { margin: 0 0 8px; color: var(--primary); font-size: 1.9rem; }
+.hero p { color: var(--muted); margin: 0; }
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  background: var(--card-bg);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  margin-bottom: 16px;
+}
+.search-bar input, .search-bar select {
+  padding: 10px 12px;
+  border: 1px solid #d7dbe0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.resultado-contador { color: var(--muted); margin: 8px 0 16px; }
+
+.grid-animais {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.animal-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease;
+  display: block;
+}
+.animal-card:hover { transform: translateY(-3px); }
+.animal-card img { width: 100%; height: 160px; object-fit: cover; }
+.animal-card-body { padding: 12px; }
+.animal-card h3 { margin: 6px 0 4px; font-size: 1rem; }
+.muted { color: var(--muted); font-size: 0.85rem; }
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  color: #fff;
+}
+.status-saudavel { background: #2e9e5b; }
+.status-em_tratamento { background: #d9822b; }
+.status-observacao { background: #4267b2; }
+.status-critico { background: #c0392b; }
+.status-adotado { background: #6c3fb5; }
+.status-obito { background: #4b4b4b; }
+
+.voltar { display: inline-block; margin-bottom: 16px; color: var(--primary); text-decoration: none; }
+
+.detalhe-header { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 24px; }
+.detalhe-header img { width: 220px; height: 220px; object-fit: cover; border-radius: 12px; }
+.detalhe-header h1 { margin: 8px 0 4px; color: var(--primary); }
+
+.dados-basicos, .saude, .historico {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.tabela-dados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 24px;
+}
+
+.timeline { list-style: none; padding: 0; margin: 0; border-left: 3px solid var(--primary); }
+.timeline-item { position: relative; padding: 0 0 20px 24px; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.timeline-data { font-weight: 700; color: var(--primary); font-size: 0.85rem; }
+.timeline-fase { display: inline-block; font-size: 0.75rem; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 4px; }
+.timeline-conteudo h3 { margin: 2px 0 6px; font-size: 1rem; }
+
+@media (max-width: 800px) {
+  .search-bar { grid-template-columns: 1fr; }
+  .detalhe-header { flex-direction: column; }
+  .detalhe-header img { width: 100%; height: auto; }
+  .tabela-dados { grid-template-columns: 1fr; }
+}
